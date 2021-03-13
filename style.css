@@ -5,7 +5,10 @@ html, body {
 	font-family: 'Playfair+Display';
 	font-size: 15px;
 	color: #222 !important;
+
 }
+a { color: #aa9144; text-decoration: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a:focus, a:hover { text-decoration: none; color: #8e7424; }
 /* .navbar li a {
   color: white !important;
 } */
@@ -34,9 +37,14 @@ html, body {
 .fa-instagram:hover{
   color: #F781D8;
 }
+
+.fa-facebook {
+  color: #0174DF;
+}
 .fa-facebook:hover{
   color: #58ACFA;
 }
 footer {
   background-color: #D8D8D8
 }
+
