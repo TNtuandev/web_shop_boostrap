@@ -20,6 +20,27 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,18 +57,6 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">SHOP</a>
-                        <!-- <div class="dropdown show">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                SHOP
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">ĐỒ CHƠI GỖ</a>
-                                <a class="dropdown-item" href="#">BÌNH GỐM</a>
-                                <a class="dropdown-item" href="#">HAND-PAINTED POTTERY</a>
-                                <a class="dropdown-item" href="#">GREEN GARDEN HANDMADE SOAP</a>
-                            </div>
-                        </div> -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">CONTACT</a>
@@ -59,7 +68,16 @@
                         <a class="nav-link" href="cartScreen.html">CART
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            USER
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Register</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -78,13 +96,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./images/image1.png">
+                <img src="./images/anh6.jpeg">
             </div>
             <div class="carousel-item">
-                <img src="./images/image2.png">
+                <img src="./images/anh7.jpeg">
             </div>
             <div class="carousel-item">
-                <img src="./images/image3.png">
+                <img src="./images/anh8.jpeg">
             </div>
         </div>
         <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
@@ -104,12 +122,16 @@
 
     <div class=" container-fluid padding">
         <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="display-4">ĐỒ CHƠI GỖ</h1>
-                <hr class="light">
+            <div class="col-12 TitleName">
+                <a class="display-4" href="#">ĐỒ CHƠI GỖ</a>
+
             </div>
         </div>
     </div>
+    <div style="text-align:right; margin-right: 50px;">
+        <a href="#" style="font-size:20px"> Xem thêm</a>
+    </div>
+    <hr class="light">
     <div class="container">
         <div class="row">
             <div class="col-sm">
@@ -165,12 +187,16 @@
 
     <div class=" container-fluid padding">
         <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="display-4">BÌNH GỐM</h1>
-                <hr class="light">
+            <div class="col-12 TitleName">
+                <a class="display-4" href="#">BÌNH GỐM</a>
             </div>
         </div>
     </div>
+    <div style="text-align:right; margin-right: 50px;">
+        <a href="#" style="font-size:20px"> Xem thêm</a>
+    </div>
+    <hr class="light">
+
     <div class="container">
         <div class="row">
             <div class="col-sm">
@@ -220,12 +246,6 @@
     <hr class="light">
 
 
-
-
-
-
-
-
     <div class="container-fluid padding">
         <div class="row text-center padding">
             <div class="col-12">
@@ -238,6 +258,10 @@
         </div>
     </div>
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0"
+        nonce="Rra3o76U"></script>
+
     <footer>
         <hr class="light">
         <div class="container-fluid padding">
@@ -247,11 +271,11 @@
                     <!-- <hr class="light"> -->
                     <p>
                         <i class="fas fa-mobile-alt"></i>
-                        Phone: 0123456789
+                        <a href="tel:0123456789">Phone: 0123456789</a>
                     </p>
                     <p>
                         <i class="far fa-envelope"></i>
-                        Gmail:abcde@gmail.com
+                        <a href="mailto:abcde@gmail.com">Gmail:abcde@gmail.com</a>
                     </p>
                     <p>
                         <i class="fas fa-map-marker-alt"></i>
@@ -272,11 +296,42 @@
                     </p>
                 </div>
 
+                <div class="col-md-4">
+                    <h4 style="margin-top: 15px"> FANPAGE</h4>
+                    <div class="fb-page" data-href="https://www.facebook.com/tsnowboutique" data-tabs="timeline"
+                        data-width="" data-height="50" data-small-header="true" data-adapt-container-width="false"
+                        data-hide-cover="true" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/tsnowboutique" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/tsnowboutique">Tsnow Boutique</a></blockquote>
+                    </div>
+                </div>
+
             </div>
         </div>
     </footer>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Nhận nút
+        var mybutton = document.getElementById("myBtn");
 
+        // Khi người dùng cuộn xuống 20px từ đầu tài liệu, hãy hiển thị nút
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Khi người dùng nhấp vào nút, cuộn lên đầu tài liệu
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
